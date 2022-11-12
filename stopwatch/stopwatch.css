@@ -1,0 +1,74 @@
+body{
+    background-color: pink;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.stopBox{
+    background-color: #5D4696;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 5PX dashed #E8E0FF;
+    width: 600px;
+    height: 400px;
+    margin-left: 450px;
+    margin-top:250px ;
+}
+.stopBox_title{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    
+}
+.stopBox_title-header{
+    display: flex;
+    
+    font-weight: 500;
+    color: pink;
+}
+.stopBox_time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 200px;
+    height: 30px;
+}
+.stopBox_time span{
+    font-size: x-large;
+    font-weight: 600;
+    color: pink;
+}
+
+.stopBox_Btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+    height: 30px;
+}
+.stopBox_Btns div button{
+    background-color: pink;
+    border: 2px solid white;
+    opacity: 5px;
+    
+}
+
+
+
+
+.stopBox_startBtn{
+    display: flex;
+    
+}
+
+.stopBox_stopBtn{
+    display: flex;
+}
+.stopBox_clearBtn{
+    display: flex;
+}
+
+
