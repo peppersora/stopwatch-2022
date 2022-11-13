@@ -5,4 +5,63 @@ let clearBtn = document.querySelector(".stopBox_clearBtn");
 // console.log(startBtn,stopBtn,clearBtn);
 
 
+/* 스톱워치 작동 방식
+strat 버튼, stop 버튼, clear버튼이 존재
+1. 60초가 되면 00이되면서 분이 01분으로 바뀌고
+60분이 되면 01시가 된다는 것을 이용...
+
+*/
+let hours=0;
+let minutes=0;
+let seconds=0;
+/* setInterval의 중복 해결을위해
+active = false;로 설정 해놓고 Start 버튼을 클릭 할 때 
+if문으로 조건 확인 후 실행  
+false일 때, 타이머 실행 및 false -> true
+-> true일 때, 현재 타이머 실행 중으로 Start 버튼을 눌러도 호출 X*/
+let active = false;
+
+startBtn.onclick=function(){
+    if (active == false) {
+	    active = true;
+	    timeoutId = setInterval(function () {
+	      seconds++;
+	      if (seconds > 59) {
+	        seconds = 0;
+	        minutes++;
+	        if (minutes > 59) {
+	          minutes = 0;
+	          hours++;
+	          if (hours > 59) {
+	            hours = 0;
+	          }
+	        }
+	      }
+          /* 나타내기
+          삼항연산자 이용=> hours, minutes,seconds가 10보다 
+          작다면..? 01:...*/
+          document.getElementById("time").innerText =
+          (hours < 10 ? "0" + hours : hours) +
+          ":" +
+          (minutes < 10 ? "0" + minutes : minutes) +
+          ":" +
+          (seconds < 10 ? "0" + seconds : seconds);
+      }, 1000);
+    }
+  };
+  stopBtn.onclick = function () {
+    clearInterval(timeoutId);
+    active = false;
+  };
+  clearBtn.onclick = function () {
+    clearInterval(timeoutId);
+    active = false;
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+    document.getElementById("time").innerText = "00:00:00";
+  };
+
+
+    
 

@@ -10,6 +10,7 @@ body{
     align-items: center;
     justify-content: space-around;
     border: 5PX dashed #E8E0FF;
+    border-radius: 10px;
     width: 600px;
     height: 400px;
     margin-left: 450px;
@@ -52,23 +53,23 @@ body{
 .stopBox_Btns div button{
     background-color: pink;
     border: 2px solid white;
+    border-radius: 10px;   
     opacity: 5px;
     
 }
 
-
-
-
 .stopBox_startBtn{
     display: flex;
-    
+   
 }
 
 .stopBox_stopBtn{
     display: flex;
+    
 }
 .stopBox_clearBtn{
     display: flex;
+    
 }
 
 
