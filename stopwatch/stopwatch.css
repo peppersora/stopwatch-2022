@@ -1,6 +1,41 @@
 body{
     background-color: pink;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Record{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #E8E0FF;
+    border: 5PX dashed #5D4696;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    margin-top:250px;
+    margin-right: 250px;
+    
+}
+.Record span {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: x-large;
+    color: #5D4696;
+
+}
+.Record_ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.Record_ul li,span{
+    
+    color: #5D4696;
 }
 
 .stopBox{
@@ -13,7 +48,7 @@ body{
     border-radius: 10px;
     width: 600px;
     height: 400px;
-    margin-left: 450px;
+    margin-left: 250px;
     margin-top:250px ;
 }
 .stopBox_title{
@@ -47,7 +82,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 200px;
+    width: 350px;
     height: 30px;
 }
 .stopBox_Btns div button{
@@ -70,6 +105,9 @@ body{
 .stopBox_clearBtn{
     display: flex;
     
+}
+.stopBox_lapseBtn{
+    display: flex;
 }
 
 
