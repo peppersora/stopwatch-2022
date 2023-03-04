@@ -1,25 +1,13 @@
-//1. 버튼 가져오기
-let startBtn = document.querySelector(".stopBox_startBtn");
-let stopBtn = document.querySelector(".stopBox_stopBtn");
-let clearBtn = document.querySelector(".stopBox_clearBtn");
-let lapBtn = document.querySelector(".stopBox_lapseBtn");
-// console.log(startBtn,stopBtn,clearBtn,lapBtn);
+// /1. 버튼 가져오기
+let startBtn = document.querySelector(".Swa_Op-start");
+let stopBtn = document.querySelector(".Swa_Op-stop");
+let clearBtn = document.querySelector(".Swa_Op-clear");
+let lapBtn = document.querySelector(".Swa_Op-lap");
 
-/* 스톱워치 작동 방식
-strat 버튼, stop 버튼, clear버튼이 존재
-1. 60초가 되면 00이되면서 분이 01분으로 바뀌고
-60분이 되면 01시가 된다는 것을 이용...
-
-*/
 let hours = 0;
 let minutes = 0;
 let seconds = 0;
 
-/* setInterval의 중복 해결을위해
-active = false;로 설정 해놓고 Start 버튼을 클릭 할 때 
-if문으로 조건 확인 후 실행  
-false일 때, 타이머 실행 및 false -> true
--> true일 때, 현재 타이머 실행 중으로 Start 버튼을 눌러도 호출 X*/
 let active = false;
 
 startBtn.onclick = function () {

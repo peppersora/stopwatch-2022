@@ -1,6 +1,6 @@
 body{
-    background-color: pink;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #e3edf7;
+    font-family: Roboto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
