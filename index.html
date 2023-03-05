@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e42de65c53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stopwatch.css" />
+    <link rel="stylesheet" href="reset.css" />
+</head>
+<body>
+<div class="Swa-Container">
+    <div class="row" id="Swa-Container_app">
+        <section class="col-12" id="Swa-Container_header">
+            <div class="row">
+                <div class="col-9">
+                    <h2>Clock</h2>
+                </div>
+                <div class="col-3 text-right" >
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-12" id="Swa_Circle">
+            <div class="row">
+                <div class="col-12">
+                    <span class="Swa_Clock">
+                        <span id="time">
+                            00:00:00
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-12" id="Swa_Op">
+            <div>
+                <ul>
+                    <li>
+                        <span class="Swa_Op-start">Start</span>
+                    </li>
+                    <li>
+                        <span class="Swa_Op-stop">Stop</span>
+                    </li>
+                    <li>
+                        <span class="Swa_Op-clear">Clear</span>
+                    </li>
+                    <li>
+                        <span class="Swa_Op-lap">Lap</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+        <!-- record 부분 -->
+        <section class="col-12" id="Swa_Counts">
+            <div id="RecordBox" >
+         
+            </div>       
+        </section>
+
+        <section class="col-12" id="Swa_Footer">
+            <div class="row">
+                <div class="col-12">
+                    <ul style="align-content: center
+                    ;">
+                        <li>
+                           <span>
+                               <i class="fa-solid fa-moon"></i>
+                           </span>
+                            
+                        </li>
+                        <li>
+                            <span>
+
+                                <i class="fa-solid fa-bell"></i>
+                            </span>
+                            
+                        </li>
+                        <li class="active">
+                            <span>
+
+                                <i class="fa-solid fa-clock"></i>
+                            </span>
+                            
+                        </li>
+                        <li>
+                            <span>
+
+                                <i class="fa-solid fa-bell-slash"></i>
+                            </span>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+</div>
+
+<script src="stopwatch.js"></script>
+</body>
+</html>
